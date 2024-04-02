@@ -1,0 +1,53 @@
+/* color */
+$mainColor: #211E55;
+$white: #FFF;
+$black: #000;
+$black-light: #333;
+$placeholder: #67C23A;
+
+/* border */
+$border: 1px solid #828C9D;
+
+/* shadow */
+$shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+
+@mixin col-start{
+  display: flex;
+  align-items: start;
+}
+
+@mixin col-center{
+  display: flex;
+  align-items: center;
+}
+
+@mixin col-end{
+  display: flex;
+  align-items: center;
+}
+
+@mixin row-between{
+  @include flex-center;
+  justify-content: space-between;
+}
+
+@mixin row-end{
+  @include flex-center;
+  justify-content: end;
+}
+
+/* font hidden */
+@mixin font-hidden{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// テキストを2行表示
+@mixin font-two{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

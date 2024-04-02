@@ -1,0 +1,59 @@
+.el-button{
+  color: #FFF;
+  font-weight: 500;
+  font-size: var(--el-font-small);
+  border-radius: 50px;
+  line-height: 1;
+  padding: 10px 12px;
+  margin: 0;
+  box-shadow: $shadow;
+  &.el-button--small{
+    width: 122px;
+  }
+  &.el-button--large{
+    width: 208px;
+  }
+
+  // primary
+  &.el-button--primary{
+    height: 40px;
+    &:focus, &:hover{
+      color: $white;
+      border-color: $mainColor;
+      background-color: $mainColor;
+      outline: 0;
+      opacity: .8;
+    }
+    &.small{
+      width: auto;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+  }
+
+  // cancel
+  &.el-button--info{
+    height: 40px;
+    &:focus, &:hover{
+      color: $white;
+      border-color: $mainColor;
+      background-color: $mainColor;
+      outline: 0;
+      opacity: .8;
+    }
+  }
+
+  // delete
+  &.el-button--info{
+    --el-button-bg-color: var(--el-color-danger);
+    height: 40px;
+    &:focus, &:hover{
+      color: $white;
+      border-color: $mainColor;
+      background-color: $mainColor;
+      outline: 0;
+      opacity: .8;
+    }
+  }
+
+}

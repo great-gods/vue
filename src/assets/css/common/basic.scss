@@ -1,0 +1,136 @@
+@charset "UTF-8";
+:root {
+  --el-font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --font-size: 16px;
+  --el-text-color-regular: #333;
+  
+  // MENU
+  --el-menu-item-height: 90px;
+  --el-aside-width: 224px;
+  --el-header-height: 103px;
+
+  // Button
+  --el-color-primary: #211E55;
+  --el-color-info: #74848B;
+  --el-color-danger: #E66C6E;
+  --el-color-success: #67C23A;
+  --el-color-warning: #F4C113;
+
+  // input
+  --el-border-color: #828C9D;
+
+  // table
+  --el-fill-color-light: #FAFAFA;
+  --el-text-color-primary: #211E55;
+
+  // font size
+  --el-font-biger: 24px;
+  --el-font-big: 20px;
+  --el-font-large: 18px;
+  --el-font-regrular: 15px;
+  --el-font-small: 14px;
+  --el-font-smaller: 12px;
+
+  // font weight
+  --el-font-weight-light: 500;
+  --el-font-weight-bold: 700;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  font-size: 16px;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-all;
+  -ms-word-wrap: break-all;
+  overflow-wrap: break-word;
+}
+
+a {
+  font-weight: 500;
+  color: #211E55;
+  text-decoration: inherit;
+}
+
+h1,h2,h3,h4,h5,h6,b,strong,th,td{
+  font-weight: bold;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+img{
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /*Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  vertical-align: bottom;
+}
+
+article,section,nav,menu,footer,header,div,dl,dd,dt,ul,li,ol,p,h1,h2,h3,h4,h5,h6,span,strong,p,table,tr,td,th{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul,ol,li{
+  list-style: none;
+}
+
+@media screen and (max-width:1440px){
+  :root {
+    --font-size: 14px;
+  
+    // MENU
+    --el-menu-item-height: 60px;
+    --el-header-height: 60px;
+  }
+
+  html,body{
+    font-size: 15px;
+  }
+}
+
+/* IE6/7/8/9 */
+input::placeholder,
+textarea::placeholder{
+  color: $placeholder;
+}
+/* WebKit */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+  color: $placeholder;
+}
+/* Firefox 4 - 18 */
+input:-moz-placeholder,
+textarea::-moz-placeholder{
+  color: $placeholder;
+}
+/* Firefox 19+ */
+input::-moz-placeholder,
+textarea::-moz-placeholder{
+  color: $placeholder;
+}
+/* IE10+ */
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder{
+  color: $placeholder;
+}
+
+@import './button.scss';
+@import './table.scss';
+@import './form.scss'
